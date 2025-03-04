@@ -1,4 +1,3 @@
-HEAD
 Flask
 numpy
 pandas
@@ -7,4 +6,4 @@ gunicorn
 matplotlib
 seaborn
 xgboost
-53b3e3739f3fec75bf31c8b54a8de2f3d0fcb294
+
