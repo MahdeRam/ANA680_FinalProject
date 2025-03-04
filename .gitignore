@@ -1,7 +1,35 @@
-venv/
-*.pyc
+# Python
 __pycache__/
-*.pyo
-*.pyd
-.ipynb_checkpoints
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
 .env
+.venv
+env/
+venv/
+ENV/
+venv_new/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
