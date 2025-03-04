@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: car-price-app
+  labels:
+    app: car-price-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: car-price-app
+  template:
+    metadata:
+      labels:
+        app: car-price-app
+    spec:
+      containers:
+      - name: car-price-app
+        image: mahderam/car-price-prediction:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        env:
+        - name: PORT
+          value: "5000"
